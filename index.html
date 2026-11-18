@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daisy Owei is a London-based product designer making thoughtful digital experiences."
+    />
+    <meta name="theme-color" content="#f7f5ee" />
+    <title>Daisy Owei — Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=contact-section-v1" />
+    <script src="./app.js?v=contact-section-v1" defer></script>
+  </head>
+  <body class="right-sidebar-collapsed">
+    <div class="app-shell">
+      <aside class="left-sidebar" aria-label="Portfolio navigation">
+        <a class="identity" href="#about" aria-label="Daisy Owei home">
+          <span class="identity-name">Daisy Owei</span>
+          <span class="identity-role">Product Designer</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Explore">
+          <p class="side-label">Explore</p>
+          <a class="nav-link is-active" href="#about" data-section="about">
+            <img src="./public/assets/imgUserRound.svg" alt="" />
+            <span>About</span>
+            <img class="active-dot" src="./public/assets/imgCurrentSectionIndicator.svg" alt="" />
+          </a>
+          <a class="nav-link" href="#process" data-section="process">
+            <img src="./public/assets/imgWorkflow.svg" alt="" />
+            <span>Process</span>
+          </a>
+          <a class="nav-link" href="#contact" data-section="contact">
+            <img src="./public/assets/imgSend.svg" alt="" />
+            <span>Contact</span>
+          </a>
+        </nav>
+
+        <nav class="case-nav" aria-label="Case studies">
+          <p class="side-label">Case studies</p>
+          <a href="#letplant-case-study" data-project="LetPlant Redesign">
+            <span class="case-number">01</span>
+            <span><strong>LetPlant Redesign</strong><small>Visual redesign · 2026</small></span>
+          </a>
+          <a href="#jpmorgan-case-study" data-project="J.P. Morgan Chase">
+            <span class="case-number">02</span>
+            <span><strong>J.P. Morgan Chase</strong><small>Enterprise UX</small></span>
+          </a>
+          <a href="#vim-case-study" data-project="VIM: Voices in Maternity">
+            <span class="case-number">03</span>
+            <span><strong>VIM: Voices in Maternity</strong><small>Final Year Capstone</small></span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <button class="canvas-overview-button" type="button" data-action="fit">
+            <img src="./public/assets/imgHouse.svg" alt="" />
+            <span>Canvas overview</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <a class="mobile-brand" href="#about" aria-label="Daisy Owei home">
+            <span><strong>Daisy Owei</strong><small>Product Designer</small></span>
+          </a>
+          <div class="breadcrumbs">
+            <a href="#about">Daisy’s portfolio</a>
+            <span aria-hidden="true">/</span>
+            <span class="crumb-current">About</span>
+            <span class="case-study-overview-tag">Project overview</span>
+            <button class="start-tag" type="button" data-action="canvas-tour">Start here</button>
+          </div>
+          <button class="case-study-back" type="button" data-action="back-to-canvas">
+            <span aria-hidden="true">←</span> Back to canvas
+          </button>
+          <button class="right-sidebar-toggle" type="button" aria-controls="right-sidebar" aria-expanded="false">
+            Show guide
+          </button>
+          <button class="mobile-menu" type="button" aria-label="Show portfolio guide">
+            <span>Menu</span>
+            <span class="menu-icon" aria-hidden="true">☰</span>
+          </button>
+        </header>
+
+        <div class="mobile-view-switch" role="group" aria-label="Portfolio view">
+          <span>View</span>
+          <div>
+            <button type="button" data-mobile-view="website" aria-pressed="true">Website</button>
+            <button type="button" data-mobile-view="canvas" aria-pressed="false">Canvas</button>
+          </div>
+        </div>
+
+        <section class="canvas-viewport" aria-label="Interactive portfolio canvas">
+          <div class="canvas-world" id="canvas-world">
+            <div class="canvas-section-kicker">
+              <span class="tiny-blue-dot"></span>
+              <span>About · Start here</span>
+            </div>
+
+            <div class="intro-grid">
+              <section class="intro-card canvas-card" id="about" aria-labelledby="intro-title">
+                <div class="intro-card-top">
+                  <p class="eyebrow">Daisy Owei / Product Designer</p>
+                </div>
+                <h1 id="intro-title" aria-label="Hi I'm Daisy, I use design to solve complex problems.">
+                  <span class="typewriter-text" aria-hidden="true">Hi I'm Daisy, I use design to solve complex problems.</span>
+                  <span class="typewriter-reserve" aria-hidden="true">Hi I'm Daisy, I use design to solve complex problems.</span>
+                </h1>
+                <img class="intro-photo" src="./public/assets/daisy-profile.jpeg" alt="Daisy smiling outside" />
+                <p class="intro-copy">
+                  London-based Product Designer at J.P. Morgan. I design enterprise data tools,
+                  consumer apps, and the spaces in between — with clarity, empathy, and a little
+                  play.
+                </p>
+                <div class="intro-actions">
+                  <a class="button button-primary" href="#about-me" data-about-story>
+                    My story <span aria-hidden="true">↗</span>
+                  </a>
+                  <a class="button button-secondary" href="https://daisycv.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Resume <span aria-hidden="true">↗</span>
+                  </a>
+                  <a class="button button-secondary button-linkedin" href="https://www.linkedin.com/in/daisy-owei-1319361a2/?originalSubdomain=uk" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <span aria-hidden="true">in</span>
+                  </a>
+                </div>
+                <div class="experience-strip">
+                  <span>Nigeria, Germany, South Africa, LA, London · ~5 yrs experience</span>
+                </div>
+              </section>
+
+              <section class="process-card canvas-card" id="process" aria-labelledby="process-title">
+                <div class="process-heading">
+                  <div>
+                    <p class="eyebrow">Inside my process</p>
+                    <h2 id="process-title">Structure, sequence, clarity.</h2>
+                  </div>
+                  <img src="./public/assets/imgSparkles.svg" alt="" />
+                </div>
+                <ol class="process-steps">
+                  <li><span>01</span><div><strong>Listen</strong><p>Design with clarity and empathy. Help people help themselves.</p></div></li>
+                  <li><span>02</span><div><strong>Sequence</strong><p>My screenwriting background shapes structure and sequence.</p></div></li>
+                  <li><span>03</span><div><strong>Simplify</strong><p>Simplify complexity. Make someone’s life a bit easier.</p></div></li>
+                </ol>
+                <div class="studio-note">
+                  <span class="asterisk-chip"><img src="./public/assets/imgAsterisk.svg" alt="" /></span>
+                  <div><small>Studio notes</small><p>Piano since 5. Portrait sketches. Two cats. Vanilla ice cream + one wildcard.</p></div>
+                </div>
+              </section>
+            </div>
+
+            <section class="project-grid" id="work" aria-label="Selected work">
+              <article class="project-card canvas-card" id="letplant-project">
+                <a class="project-image-link" href="#letplant-case-study" aria-label="Open LetPlant Redesign case study">
+                  <img class="project-image" src="./public/assets/cover-letplant.png" alt="LetPlant plant-care app displayed on a phone" loading="lazy" />
+                </a>
+                <div class="project-card-body">
+                  <div class="project-meta"><span>01 / Visual redesign</span><span class="project-chip">2026 · Ongoing</span></div>
+                  <h2>LetPlant Redesign</h2>
+                  <p>Led the visual redesign of an AI plant-care app with 14,000+ users across iOS and Android — bringing key features forward and making everyday care easier to navigate.</p>
+                  <div class="project-footer"><small>iOS live · Android rolling out</small><a href="#letplant-case-study">View case study <span>↗</span></a></div>
+                </div>
+              </article>
+
+              <article class="project-card canvas-card" id="jpmorgan-project">
+                <a class="project-image-link" href="#jpmorgan-case-study" data-open-project="J.P. Morgan Chase" aria-label="Open J.P. Morgan Chase case study">
+                  <img class="project-image" src="./public/assets/cover-jpmorgan.jpg" alt="J.P. Morgan Corporate and Investment Bank presentation on a laptop" loading="lazy" />
+                </a>
+                <div class="project-card-body">
+                  <div class="project-meta"><span>02 / Enterprise UX</span><span class="project-chip">J.P. Morgan</span></div>
+                  <h2><a href="#jpmorgan-case-study" data-open-project="J.P. Morgan Chase">Redesigning Enterprise Tools for Global Clients</a></h2>
+                  <p>Designing enterprise data tools for a global investment bank, simplifying complex financial information for the people who use them every day.</p>
+                  <div class="project-footer"><small>Financial data platforms</small><a href="#jpmorgan-case-study" data-open-project="J.P. Morgan Chase">View case study <span>↗</span></a></div>
+                </div>
+              </article>
+
+              <article class="project-card canvas-card" id="vim-project">
+                <a class="project-image-link" href="#vim-case-study" data-open-project="VIM: Voices in Maternity" aria-label="Open VIM: Voices in Maternity case study">
+                  <img class="project-image" src="./public/assets/cover-vim.jpg" alt="VIM maternity equity project displayed on a laptop" loading="lazy" />
+                </a>
+                <div class="project-card-body">
+                  <div class="project-meta"><span>03 / Equity design</span><span class="project-chip">Final Year Capstone</span></div>
+                  <h2>VIM: Voices in Maternity</h2>
+                  <p>Designing for equity in maternal healthcare. Final Year Capstone.</p>
+                  <div class="project-footer"><small>Healthcare · Social impact</small><a href="#vim-case-study" data-open-project="VIM: Voices in Maternity">View case study <span>↗</span></a></div>
+                </div>
+              </article>
+            </section>
+
+            <section class="project-collection" id="bonus-projects" aria-label="Bonus projects">
+              <div class="collection-heading">
+                <p class="collection-kicker">Bonus projects</p>
+              </div>
+
+              <article class="project-card featured-project canvas-card" id="quick-ux-wins">
+                <a class="project-image-link" href="#quick-ux-case-study" data-open-project="Quick UX Wins in Fast-Paced Environments" aria-label="Open Quick UX Wins in Fast-Paced Environments project">
+                  <img class="project-image" src="./public/assets/cover-quick-ux.jpg" alt="Mobile design screens for Cookie Jar, chat, and Millennium TV" loading="lazy" />
+                </a>
+                <div class="project-card-body">
+                  <div class="project-meta"><span>Bonus project / Product design</span><span class="project-chip">Featured</span></div>
+                  <h2>Quick UX Wins in Fast-Paced Environments</h2>
+                  <p>Small, thoughtful design improvements that make complex products clearer and easier to use.</p>
+                  <div class="project-footer"><small>Fast-paced product design</small><a href="#quick-ux-case-study" data-open-project="Quick UX Wins in Fast-Paced Environments">View project <span>↗</span></a></div>
+                </div>
+              </article>
+
+              <section class="project-subsection" id="early-career-projects" aria-label="Early career case studies">
+                <div class="collection-subheading">
+                  <p class="collection-kicker">Early career case studies</p>
+                </div>
+                <div class="project-grid secondary-project-grid">
+                  <article class="project-card canvas-card" id="hinge-feature-design">
+                    <a class="project-image-link" href="#hinge-case-study" data-open-project="Hinge Feature Design" aria-label="Open Hinge Feature Design project">
+                      <img class="project-image" src="./public/assets/cover-hinge.jpg" alt="Hinge Standouts and Trivia feature screens on phones" loading="lazy" />
+                    </a>
+                    <div class="project-card-body">
+                      <div class="project-meta"><span>Early career / UX design</span><span class="project-chip">Case study</span></div>
+                      <h2>Hinge Feature Design</h2>
+                      <p>A feature-design project exploring a more thoughtful experience for making connections.</p>
+                      <div class="project-footer"><small>Early career case study</small><a href="#hinge-case-study" data-open-project="Hinge Feature Design">View project <span>↗</span></a></div>
+                    </div>
+                  </article>
+
+                  <article class="project-card canvas-card" id="internet-health-visualisations">
+                    <a class="project-image-link" href="#internet-health-case-study" data-open-project="Internet Health Data Visualisations" aria-label="Open Internet Health Data Visualisations project">
+                      <img class="project-image" src="./public/assets/cover-internet-health.jpg" alt="Internet shutdowns analysis displayed on a laptop" loading="lazy" />
+                    </a>
+                    <div class="project-card-body">
+                      <div class="project-meta"><span>Early career / Data visualisation</span><span class="project-chip">Case study</span></div>
+                      <h2>Internet Health Data Visualisations</h2>
+                      <p>Visualising internet health to make complex information and patterns easier to understand.</p>
+                      <div class="project-footer"><small>Early career case study</small><a href="#internet-health-case-study" data-open-project="Internet Health Data Visualisations">View project <span>↗</span></a></div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </section>
+
+            <section class="project-collection personal-projects" id="personal-social-impact" aria-label="Personal and social impact projects">
+              <div class="collection-heading">
+                <p class="collection-kicker">Personal and social impact</p>
+              </div>
+              <div class="project-grid secondary-project-grid">
+                <article class="project-card canvas-card" id="hone-personal-project">
+                  <a class="project-image-link" href="#hone-case-study" data-open-project="Hone Personal Project" aria-label="Open Hone Personal Project">
+                    <img class="project-image" src="./public/assets/cover-hone.png" alt="Hone productivity app concept screens" loading="lazy" />
+                  </a>
+                  <div class="project-card-body">
+                    <div class="project-meta"><span>Personal / Product design</span><span class="project-chip">Personal project</span></div>
+                    <h2>Hone — Personal Project</h2>
+                    <p>A consumer app for habit-building and follow-through. Currently in progress, so the screens are still evolving.</p>
+                    <div class="project-footer"><small>Personal project</small><a href="#hone-case-study" data-open-project="Hone Personal Project">View project <span>↗</span></a></div>
+                  </div>
+                </article>
+
+                <article class="project-card canvas-card" id="caps-for-care">
+                  <a class="project-image-link" href="#caps-for-care-case-study" data-open-project="Caps for Care" aria-label="Open Caps for Care project">
+                    <img class="project-image" src="./public/assets/cover-caps-for-care.jpg" alt="Caps for Care T-shirt and cap laid on a wooden floor" loading="lazy" />
+                  </a>
+                  <div class="project-card-body">
+                    <div class="project-meta"><span>Social impact / Community</span><span class="project-chip">Community project</span></div>
+                    <h2>Caps for Care</h2>
+                    <p>A community-focused project bringing design and social impact together.</p>
+                    <div class="project-footer"><small>Personal and social impact</small><a href="#caps-for-care-case-study" data-open-project="Caps for Care">View project <span>↗</span></a></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="canvas-contact canvas-card" id="contact" aria-labelledby="canvas-contact-title">
+              <p class="eyebrow">Let’s connect</p>
+              <h2 id="canvas-contact-title">Contact</h2>
+              <p class="canvas-contact-copy">Feel free to say hi, ask me what I’m currently designing, or anything else!</p>
+              <div class="canvas-contact-links">
+                <a href="mailto:daisyicowei@gmail.com"><span aria-hidden="true">📬</span><span><small>Email me</small><strong>daisyicowei@gmail.com</strong></span><span aria-hidden="true">↗</span></a>
+                <a href="https://www.linkedin.com/in/daisy-owei-1319361a2/?originalSubdomain=uk" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span><span><small>LinkedIn</small><strong>Daisy Owei</strong></span><span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </div>
+
+          <div class="onboarding-card" role="dialog" aria-labelledby="onboarding-title" aria-describedby="onboarding-copy" aria-live="polite" hidden>
+            <span class="onboarding-step"></span>
+            <button class="onboarding-close" type="button" aria-label="Dismiss portfolio guide">×</button>
+            <h2 id="onboarding-title"></h2>
+            <p id="onboarding-copy"></p>
+            <div class="onboarding-actions">
+              <button class="button button-primary" type="button" data-action="start-exploring">Start exploring</button>
+              <button class="button button-primary" type="button" data-action="next-tour-step">Next</button>
+            </div>
+          </div>
+
+          <div class="canvas-hint">
+            <div class="canvas-mode-switch" role="group" aria-label="Canvas interaction mode">
+              <button type="button" data-canvas-mode="scroll" aria-pressed="true">Scroll</button>
+              <button type="button" data-canvas-mode="pan" aria-pressed="false">Pan</button>
+            </div>
+            <span class="canvas-mode-hint">Scroll the portfolio or drag to pan</span>
+          </div>
+
+          <div class="zoom-toolbar" aria-label="Canvas zoom controls">
+            <button type="button" data-action="zoom-out" aria-label="Zoom out">
+              <img src="./public/assets/imgMinus.svg" alt="" />
+            </button>
+            <output id="zoom-level" aria-live="polite">100%</output>
+            <button type="button" data-action="zoom-in" aria-label="Zoom in">
+              <img src="./public/assets/imgPlus.svg" alt="" />
+            </button>
+            <span class="toolbar-separator"></span>
+            <button class="fit-button" type="button" data-action="fit">
+              <img src="./public/assets/imgMaximize.svg" alt="" />
+              <span>Fit overview</span>
+            </button>
+          </div>
+        </section>
+
+        <nav class="mobile-menu-panel" id="mobile-menu-panel" aria-label="Portfolio navigation" hidden>
+          <div class="mobile-menu-content">
+            <p class="mobile-menu-eyebrow">Explore</p>
+            <h2>Follow your curiosity.</h2>
+            <div class="mobile-main-links">
+              <a href="#about" data-mobile-section="about" class="is-active" aria-current="page">About <span>•</span></a>
+              <a href="#work" data-mobile-section="work">Selected work <span aria-hidden="true">↓</span></a>
+              <a href="#process" data-mobile-section="process">Process <span aria-hidden="true">↓</span></a>
+              <a href="#contact" data-mobile-section="contact">Contact <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="mobile-work-links">
+              <p class="mobile-menu-eyebrow">Straight to the work</p>
+              <a href="#letplant-project" data-mobile-section="letplant-project"><span>01</span><span><strong>LetPlant Redesign</strong><small>Visual redesign · 2026</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#jpmorgan-case-study" data-mobile-section="jpmorgan-project"><span>02</span><span><strong>J.P. Morgan Chase</strong><small>Enterprise UX</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#vim-case-study" data-mobile-section="vim-project"><span>03</span><span><strong>VIM: Voices in Maternity</strong><small>Final Year Capstone</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#quick-ux-case-study" data-mobile-section="quick-ux-wins"><span>04</span><span><strong>Quick UX Wins</strong><small>Bonus project</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#hinge-case-study" data-mobile-section="hinge-feature-design"><span>05</span><span><strong>Hinge Feature Design</strong><small>Early career case study</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#internet-health-case-study" data-mobile-section="internet-health-visualisations"><span>06</span><span><strong>Internet Health Data Visualisations</strong><small>Early career case study</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#hone-case-study" data-mobile-section="hone-personal-project"><span>07</span><span><strong>Hone — Personal Project</strong><small>Personal project</small></span><b aria-hidden="true">↗</b></a>
+              <a href="#caps-for-care-case-study" data-mobile-section="caps-for-care"><span>08</span><span><strong>Caps for Care</strong><small>Personal and social impact</small></span><b aria-hidden="true">↗</b></a>
+            </div>
+            <a class="mobile-contact-link" href="mailto:hello@daisyowei.com">Say hello <span aria-hidden="true">↗</span></a>
+          </div>
+        </nav>
+
+        <div class="case-study-frame" id="case-study-frame" hidden>
+          <iframe title="Portfolio case study"></iframe>
+        </div>
+      </main>
+
+      <aside class="right-sidebar" id="right-sidebar" aria-label="Your portfolio guide">
+        <div class="guide-content">
+          <div class="canvas-map">
+            <p class="side-label">On the canvas</p>
+            <div class="map-grid">
+              <div class="map-top-grid"></div>
+              <div class="map-selected-work">
+                <p class="map-section-label">Selected work</p>
+                <div class="map-project-grid"></div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="right-project-nav" aria-label="More projects">
+            <section class="project-nav-card bonus-nav-card" aria-labelledby="bonus-nav-title">
+              <h2 class="project-nav-heading" id="bonus-nav-title">Bonus projects</h2>
+              <div class="project-nav-links">
+                <a class="project-nav-link" href="#quick-ux-case-study" data-project="Quick UX Wins in Fast-Paced Environments">Quick UX Wins <span aria-hidden="true">↗</span></a>
+                <details class="project-nav-accordion">
+                  <summary class="project-nav-link">Early Career</summary>
+                  <div class="project-nav-children">
+                    <a href="#hinge-case-study" data-project="Hinge Feature Design">Hinge Feature Design</a>
+                    <a href="#internet-health-case-study" data-project="Internet Health Data Visualisations">Internet Health Data Visualisations</a>
+                  </div>
+                </details>
+              </div>
+            </section>
+            <section class="project-nav-card impact-nav-card" aria-labelledby="impact-nav-title">
+              <h2 class="project-nav-heading" id="impact-nav-title">Personal &amp; Social Impact</h2>
+              <div class="project-nav-links">
+                <a class="project-nav-link" href="#hone-case-study" data-project="Hone Personal Project">Hone <span aria-hidden="true">↗</span></a>
+                <a class="project-nav-link" href="#caps-for-care-case-study" data-project="Caps for Care">Caps for Care <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </nav>
+
+          <div class="location-pill"><img src="./public/assets/imgMapPin.svg" alt="" /><span>You’re here: About</span></div>
+          <button class="guide-tour-button" type="button" data-action="canvas-tour">
+            <img src="./public/assets/imgSparkles.svg" alt="" />
+            <span>Your portfolio guide</span>
+            <span class="guide-tour-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </aside>
+
+      <nav class="mobile-nav" aria-label="Portfolio sections">
+        <a href="#about" data-section="about"><img src="./public/assets/imgUserRound.svg" alt="" /><span>About</span></a>
+        <a href="#work" data-section="work"><img src="./public/assets/imgLayoutGrid.svg" alt="" /><span>Work</span></a>
+        <a href="#process" data-section="process"><img src="./public/assets/imgWorkflow.svg" alt="" /><span>Process</span></a>
+        <a href="#contact" data-section="contact"><img src="./public/assets/imgSend.svg" alt="" /><span>Contact</span></a>
+      </nav>
+    </div>
+
+    <dialog class="project-dialog" id="project-dialog">
+      <button class="dialog-close" type="button" aria-label="Close case study">×</button>
+      <p class="eyebrow">Selected case study</p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-copy"></p>
+      <a class="button button-primary" href="mailto:hello@daisyowei.com?subject=Portfolio%20case%20study">Ask me about this project <span aria-hidden="true">↗</span></a>
+    </dialog>
+  </body>
+</html>

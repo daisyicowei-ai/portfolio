@@ -1,0 +1,314 @@
+.quick-ux-page {
+  --quick-ink: #263745;
+  --quick-muted: #627483;
+  --quick-line: #dce7ef;
+  --quick-accent: #6289aa;
+  --quick-accent-dark: #456d8e;
+  --quick-soft: #edf4f9;
+  min-height: 100vh;
+  background: #eef5fb;
+  color: var(--quick-ink);
+}
+
+.quick-ux-page .case-header {
+  border-bottom-color: var(--quick-line);
+  background: #fafdff;
+}
+
+.quick-ux-page .case-brand-mark {
+  background: var(--quick-accent-dark);
+}
+
+.quick-ux-page .back-link:hover,
+.quick-ux-page .case-footer a:hover {
+  color: var(--quick-accent-dark);
+}
+
+.quick-ux-layout {
+  display: block;
+  width: min(940px, calc(100% - 64px));
+  padding: 58px 0 52px;
+}
+
+.quick-ux-content {
+  display: grid;
+  gap: 18px;
+}
+
+.quick-ux-card {
+  min-width: 0;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid var(--quick-line);
+  border-radius: 15px;
+  background: #fff;
+  scroll-margin-top: 28px;
+}
+
+.quick-ux-hero {
+  padding: clamp(28px, 5vw, 48px);
+}
+
+.quick-ux-kicker,
+.quick-ux-index {
+  margin: 0 0 13px;
+  color: var(--quick-accent-dark);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.quick-ux-index {
+  margin-bottom: 10px;
+  font-size: 9px;
+}
+
+.quick-ux-index span {
+  color: #a7bac8;
+}
+
+.quick-ux-card h1,
+.quick-ux-card h2 {
+  margin: 0;
+  color: var(--quick-ink);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.18;
+}
+
+.quick-ux-card h1 {
+  max-width: 760px;
+  font-size: clamp(36px, 6vw, 58px);
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.quick-ux-card h2 {
+  font-size: clamp(24px, 3.5vw, 32px);
+}
+
+.quick-ux-subtitle,
+.quick-ux-project-subtitle {
+  margin: 15px 0 0;
+  color: var(--quick-accent-dark);
+  font-size: clamp(16px, 2.4vw, 20px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.quick-ux-lede {
+  max-width: 730px;
+  margin: 14px 0 0;
+  color: var(--quick-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.quick-ux-card > p:not(.quick-ux-index, .quick-ux-project-subtitle) {
+  color: var(--quick-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.quick-ux-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.quick-ux-detail-grid article,
+.quick-ux-outcomes {
+  min-width: 0;
+  padding: 19px;
+  border: 1px solid var(--quick-line);
+  border-radius: 11px;
+  background: #fff;
+}
+
+.quick-ux-detail-grid h3,
+.quick-ux-outcomes h3,
+.quick-ux-gallery-title {
+  margin: 0;
+  color: var(--quick-ink);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.quick-ux-detail-grid p,
+.quick-ux-detail-grid li,
+.quick-ux-outcomes li {
+  color: var(--quick-muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.quick-ux-detail-grid p {
+  margin: 8px 0 0;
+}
+
+.quick-ux-detail-grid ul,
+.quick-ux-outcomes ul {
+  display: grid;
+  gap: 7px;
+  margin: 11px 0 0;
+  padding-left: 18px;
+}
+
+.quick-ux-detail-grid blockquote,
+.quick-ux-outcomes blockquote {
+  margin: 15px 0 0;
+  padding: 13px 15px;
+  border-left: 3px solid var(--quick-accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--quick-soft);
+  color: #425768;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.quick-ux-detail-grid cite,
+.quick-ux-outcomes cite {
+  display: block;
+  margin-top: 6px;
+  color: var(--quick-muted);
+  font-size: 10px;
+  font-style: normal;
+}
+
+.quick-ux-detail-grid .quick-ux-subheading {
+  margin-top: 18px;
+}
+
+.quick-ux-gallery-title {
+  margin-top: 23px;
+}
+
+.quick-ux-gallery {
+  display: grid;
+  gap: 11px;
+  margin-top: 12px;
+}
+
+.quick-ux-gallery-two,
+.quick-ux-gallery-three {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quick-ux-image-placeholder {
+  display: grid;
+  min-width: 0;
+  min-height: 155px;
+  align-content: center;
+  justify-items: center;
+  gap: 9px;
+  margin: 0;
+  padding: 16px;
+  border: 1px dashed #b8ccda;
+  border-radius: 10px;
+  background: #f4f8fb;
+  color: var(--quick-accent-dark);
+  text-align: center;
+}
+
+.quick-ux-image-placeholder > span {
+  display: grid;
+  width: 33px;
+  height: 33px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--quick-soft);
+  font-size: 18px;
+}
+
+.quick-ux-image-placeholder figcaption {
+  display: grid;
+  gap: 4px;
+  overflow-wrap: anywhere;
+}
+
+.quick-ux-image-placeholder strong {
+  color: var(--quick-ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.quick-ux-image-placeholder small {
+  color: var(--quick-muted);
+  font-size: 10px;
+}
+
+.quick-ux-image-card {
+  min-height: 0;
+  align-content: start;
+  justify-items: stretch;
+  padding: 10px;
+  border-style: solid;
+  background: #fff;
+}
+
+.quick-ux-image-card img {
+  display: block;
+  width: 100%;
+  max-height: 430px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.quick-ux-image-wide {
+  grid-column: 1 / -1;
+  min-height: 205px;
+}
+
+.quick-ux-image-wide img {
+  max-height: 560px;
+}
+
+.quick-ux-outcomes {
+  margin-top: 12px;
+}
+
+.quick-ux-contact > p:not(.quick-ux-index) {
+  margin: 10px 0 0;
+}
+
+.quick-ux-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 19px;
+}
+
+.quick-ux-contact-links a {
+  padding: 10px 14px;
+  border: 1px solid var(--quick-line);
+  border-radius: 8px;
+  background: var(--quick-soft);
+  color: var(--quick-accent-dark);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quick-ux-contact-links a:hover {
+  border-color: var(--quick-accent);
+}
+
+@media (max-width: 640px) {
+  .quick-ux-layout {
+    width: min(100% - 32px, 940px);
+    padding: 28px 0 36px;
+  }
+
+  .quick-ux-detail-grid,
+  .quick-ux-gallery-two,
+  .quick-ux-gallery-three {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-ux-image-wide {
+    grid-column: auto;
+  }
+}

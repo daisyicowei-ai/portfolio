@@ -1,0 +1,275 @@
+.internet-health-page {
+  --health-ink: #3e3030;
+  --health-muted: #796868;
+  --health-line: #ecdcdc;
+  --health-accent: #c65e5e;
+  --health-accent-dark: #9c4141;
+  --health-soft: #fbefef;
+  min-height: 100vh;
+  background: #fbf1f1;
+  color: var(--health-ink);
+}
+
+.internet-health-page .case-header {
+  border-bottom-color: var(--health-line);
+  background: #fff;
+}
+
+.internet-health-page .case-brand-mark {
+  background: var(--health-accent-dark);
+}
+
+.internet-health-page .back-link:hover,
+.internet-health-page .case-footer a:hover {
+  color: var(--health-accent-dark);
+}
+
+.internet-health-layout {
+  display: block;
+  width: min(940px, calc(100% - 64px));
+  padding: 58px 0 52px;
+}
+
+.internet-health-content {
+  display: grid;
+  gap: 18px;
+}
+
+.internet-health-card {
+  min-width: 0;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid var(--health-line);
+  border-radius: 15px;
+  background: #fff;
+  scroll-margin-top: 28px;
+}
+
+.internet-health-hero {
+  padding: clamp(28px, 5vw, 48px);
+}
+
+.internet-health-kicker,
+.internet-health-index {
+  margin: 0 0 13px;
+  color: var(--health-accent-dark);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.internet-health-index {
+  margin-bottom: 10px;
+  font-size: 9px;
+}
+
+.internet-health-index span {
+  color: #c8a9a9;
+}
+
+.internet-health-card h1,
+.internet-health-card h2 {
+  margin: 0;
+  color: var(--health-ink);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.18;
+}
+
+.internet-health-card h1 {
+  max-width: 760px;
+  font-size: clamp(36px, 6vw, 58px);
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.internet-health-card h2 {
+  font-size: clamp(24px, 3.5vw, 32px);
+}
+
+.internet-health-subtitle {
+  margin: 15px 0 0;
+  color: var(--health-accent-dark);
+  font-size: clamp(16px, 2.4vw, 20px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.internet-health-lede,
+.internet-health-copy {
+  color: var(--health-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.internet-health-lede {
+  max-width: 740px;
+  margin: 14px 0 0;
+}
+
+.internet-health-copy {
+  margin: 12px 0 0;
+}
+
+.internet-health-question-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.internet-health-question-list p {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--health-line);
+  border-radius: 9px;
+  background: #fff;
+  color: #5e4d4d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.internet-health-question-list span {
+  color: var(--health-accent-dark);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.internet-health-list {
+  display: grid;
+  gap: 9px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.internet-health-list li {
+  position: relative;
+  padding: 13px 15px 13px 38px;
+  border: 1px solid var(--health-line);
+  border-radius: 9px;
+  background: #fff;
+  color: #5e4d4d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.internet-health-list li::before {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  color: var(--health-accent);
+  content: "✦";
+}
+
+.internet-health-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.internet-health-benefits article {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--health-line);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.internet-health-benefits article > span {
+  color: var(--health-accent);
+  font-size: 19px;
+}
+
+.internet-health-benefits p {
+  margin: 9px 0 0;
+  color: var(--health-muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.internet-health-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 11px 15px;
+  border: 1px solid #e8caca;
+  border-radius: 8px;
+  background: var(--health-soft);
+  color: var(--health-accent-dark);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.internet-health-visit:hover,
+.internet-health-contact-links a:hover {
+  border-color: var(--health-accent);
+}
+
+.internet-health-embed-wrap {
+  overflow: hidden;
+  margin-top: 18px;
+  border: 1px solid var(--health-line);
+  border-radius: 11px;
+  background: #fff;
+}
+
+.internet-health-embed {
+  display: block;
+  width: 100%;
+  height: clamp(480px, 70vw, 720px);
+  border: 0;
+  background: #fff;
+}
+
+.internet-health-embed-note {
+  margin: 10px 0 0;
+  color: var(--health-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.internet-health-embed-note a {
+  color: var(--health-accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.internet-health-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 19px;
+}
+
+.internet-health-contact-links a {
+  padding: 10px 14px;
+  border: 1px solid var(--health-line);
+  border-radius: 8px;
+  background: var(--health-soft);
+  color: var(--health-accent-dark);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .internet-health-layout {
+    width: min(100% - 32px, 940px);
+    padding: 28px 0 36px;
+  }
+
+  .internet-health-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .internet-health-embed {
+    height: 68vh;
+    min-height: 420px;
+  }
+}

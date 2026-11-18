@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A written walkthrough of Daisy Owei's self-service reporting redesign for J.P. Morgan institutional clients."
+    />
+    <meta name="theme-color" content="#f0f6fc" />
+    <title>Unified Client Reporting — Daisy Owei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./letplant.css?v=case-study-section-map" />
+    <link rel="stylesheet" href="./jpmorgan.css?v=pastel-blue-v3" />
+    <script src="./jpmorgan.js?v=unified-reporting-case-study" defer></script>
+  </head>
+  <body class="case-study-page jpmorgan-case-study">
+    <header class="case-header">
+      <a class="case-brand" href="./index.html#work" target="_top" aria-label="Daisy Owei portfolio home">
+        <span class="case-brand-mark">do.</span>
+        <span>Daisy Owei <small>Product Designer</small></span>
+      </a>
+      <a class="back-link" href="./index.html#work" target="_top"><span aria-hidden="true">←</span> Back to portfolio</a>
+    </header>
+
+    <div class="case-layout jpm-layout">
+      <main class="case-content">
+        <p class="jpm-kicker">
+          <span>02 / J.P. Morgan Chase · Start here</span>
+          <span>A closer look at the thinking behind the work ↗</span>
+        </p>
+
+        <section class="jpm-hero" id="overview" aria-labelledby="case-title">
+          <div class="jpm-overview-card">
+            <div class="jpm-project-label">
+              <span>J.P. Morgan Chase</span>
+              <span class="jpm-chip">Enterprise UX · Securities Services</span>
+            </div>
+            <h1 id="case-title">Unified Client<br />Reporting</h1>
+            <p class="jpm-lede">
+              A self-service reporting experience for institutional clients to generate, schedule,
+              and customize financial reports.
+            </p>
+            <div class="jpm-confidentiality">
+              <span aria-hidden="true">ⓘ</span>
+              <p>
+                The interfaces are confidential, so I can’t share product screens. This written
+                walkthrough covers the problem, decisions, and outcomes instead.
+              </p>
+            </div>
+          </div>
+
+          <aside class="jpm-role-card" aria-labelledby="role-title">
+            <p class="jpm-card-eyebrow">My role</p>
+            <span class="jpm-card-arrow" aria-hidden="true">↗</span>
+            <h2 id="role-title">UX Designer<br />Securities Services</h2>
+            <p>
+              I led UX for Unified Client Reporting, owning the information architecture, core flows,
+              and research alongside product managers and engineers.
+            </p>
+            <div class="jpm-tags" aria-label="Areas of work">
+              <span>Structure</span><span>Research</span><span>Flows</span>
+            </div>
+          </aside>
+        </section>
+
+        <div class="jpm-two-up">
+          <section class="jpm-info-card" id="problem" aria-labelledby="problem-title">
+            <p class="jpm-card-eyebrow">01 / The problem</p>
+            <h2 id="problem-title">Two platforms. One fragmented experience.</h2>
+            <p>
+              Clients relied on two separate reporting platforms: a decades-old legacy system and
+              a newer platform with a different structure.
+            </p>
+            <ul>
+              <li>Neither offered a consistent, intuitive workflow.</li>
+              <li>Clients needed service teams for routine tasks like running a report or setting a schedule.</li>
+              <li>Switching between platforms added friction and made the experience harder to learn.</li>
+            </ul>
+            <p>
+              The split increased operational load on internal teams, created friction for clients,
+              and steepened onboarding for new users.
+            </p>
+            <div class="jpm-impact-chips">
+              <span>More support for routine work</span>
+              <span>Fragmented client workflows</span>
+              <span>Steeper learning curve</span>
+            </div>
+          </section>
+
+          <section class="jpm-info-card jpm-opportunity-card" id="opportunity" aria-labelledby="opportunity-title">
+            <p class="jpm-card-eyebrow">02 / The opportunity</p>
+            <h2 id="opportunity-title">Make self-service feel possible.</h2>
+            <p>Build a modern reporting experience that would:</p>
+            <ul>
+              <li>Let clients run and customize reports on their own.</li>
+              <li>Reduce the load on service teams.</li>
+              <li>Improve usability without compromising data accuracy or security.</li>
+            </ul>
+            <p class="jpm-design-note">A clear design goal, grounded in client needs and platform trust.</p>
+          </section>
+        </div>
+
+        <div class="jpm-two-up jpm-lower-grid">
+          <section class="jpm-info-card" id="focus-areas" aria-labelledby="focus-title">
+            <p class="jpm-card-eyebrow">03 / My focus areas</p>
+            <h2 id="focus-title">From system structure to the details.</h2>
+            <ul class="jpm-focus-list">
+              <li>Information architecture and system-wide structure</li>
+              <li>Report scheduling, duplication, and customization flows</li>
+              <li>Wireframes and low-fidelity prototypes</li>
+              <li>Client interviews and feedback loops to validate solutions</li>
+              <li>Problem-framing and prioritization with product and engineering</li>
+            </ul>
+            <div class="jpm-flow-card" aria-label="Report creation flow">
+              <span>Build a report</span><i aria-hidden="true"></i>
+              <span>Shape the layout</span><i aria-hidden="true"></i>
+              <span>Validate</span>
+            </div>
+          </section>
+
+          <section class="jpm-info-card" id="how-we-work" aria-labelledby="working-title">
+            <p class="jpm-card-eyebrow">04 / How we work</p>
+            <h2 id="working-title">A lean team. A shared way forward.</h2>
+            <p class="jpm-team-label">Cross-functional team</p>
+            <h3>UX designers</h3>
+            <p>Research, flows, information architecture, prototyping, and wireframes.</p>
+            <h3>UI solutions designers</h3>
+            <p>Styling, tokens, design-system contributions, and handoff visuals.</p>
+            <p>
+              I moved between UX and UI as needed, working day to day with product managers and
+              engineers to frame problems, prioritize, and move decisions forward.
+            </p>
+          </section>
+        </div>
+
+        <section class="jpm-approach-section" id="approach" aria-labelledby="approach-title">
+          <p class="jpm-card-eyebrow">05 / How I approached it</p>
+          <h2 id="approach-title">Make powerful tools feel manageable.</h2>
+          <div class="jpm-approach-grid">
+            <article>
+              <span>01</span>
+              <h3>Designed the most complex flow: report creation.</h3>
+              <p>
+                Clients needed to build reports from scratch: add and remove attributes, arrange
+                the layout, and add calculations. I kept each step manageable and made changes
+                give clear feedback, so clients could tell their report was valid as they built it.
+              </p>
+              <small>Live preview · Validation states · Grouped attributes · Undo actions</small>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Balanced control with safety.</h3>
+              <p>
+                Sensible defaults and guardrails made the safe path the fastest one, while
+                templates, validation, and progressive disclosure let clients go deeper when needed.
+              </p>
+              <small>Templates · Validation · Progressive disclosure</small>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Sequenced complexity instead of hiding it.</h3>
+              <p>
+                Scheduling used to put every parameter on one screen. I broke it into steps where
+                each decision set up the next, reducing abandoned schedules and repeat support requests.
+              </p>
+              <small>One clear decision at a time</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="jpm-outcomes-section" id="outcomes" aria-labelledby="outcomes-title">
+          <p class="jpm-card-eyebrow">06 / What changed</p>
+          <h2 id="outcomes-title">Self-service, built around client needs.</h2>
+          <div class="jpm-outcomes-grid">
+            <article><strong>First time possible</strong><p>Clients could create a report end to end without relying on a service team.</p></article>
+            <article><strong>35+ clients</strong><p>Institutional clients gave positive feedback during testing.</p></article>
+            <article><strong>Delivered ahead</strong><p>The first scheduling and catalog redesign shipped ahead of schedule.</p></article>
+            <article><strong>Clearer decisions</strong><p>Prototype-led sessions improved stakeholder alignment and sped up decisions.</p></article>
+          </div>
+          <p class="jpm-outcome-footnote">The structure continues to support ongoing feature work.</p>
+        </section>
+
+        <section class="jpm-next-section" id="where-next" aria-labelledby="next-title">
+          <p class="jpm-card-eyebrow">07 / Where this went next</p>
+          <h2 id="next-title">Same thinking, a different kind of complexity.</h2>
+          <p>
+            From 2023 to 2026, I worked in Securities Services. I’m now a Product Designer in
+            J.P. Morgan’s Chief Data Analytics Office (CDAO), leading design for the Connectivity
+            area of the Data Mesh platform: helping teams discover, connect to, and register data
+            sources.
+          </p>
+          <p>
+            The through-line is making high-stakes, technical workflows clear enough for people to
+            move through on their own.
+          </p>
+        </section>
+
+        <footer class="case-footer">
+          <span>Thanks for reading.</span>
+          <a href="./index.html#work" target="_top">Back to selected work <span aria-hidden="true">↗</span></a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

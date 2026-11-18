@@ -1,0 +1,10 @@
+# Editor / OS files
+.vscode/
+.DS_Store
+
+# Unused source images (not referenced by the site)
+Frame 1.png
+Frame 14.jpg
+IMG_0121.JPG
+Quick wins.jpg
+VIM cover.jpg

@@ -1,0 +1,949 @@
+.jpmorgan-case-study {
+  --case-ink: #2e3948;
+  --case-muted: #66778a;
+  --case-line: #d9e3ef;
+  --case-green: #648db7;
+  --case-green-dark: #45698f;
+  --case-mint: #e8f1fa;
+  background: #f0f6fc;
+}
+
+.jpmorgan-case-study .case-brand-mark {
+  background: var(--case-green);
+}
+
+.jpmorgan-case-study .jpm-layout {
+  display: block;
+  width: min(940px, calc(100% - 48px));
+  padding: 18px 0 42px;
+}
+
+.jpm-kicker {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 13px;
+  color: #24242a;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.jpm-hero,
+.jpm-two-up {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.jpm-hero {
+  grid-template-columns: minmax(0, 1.2fr) minmax(245px, 0.8fr);
+  margin-bottom: 12px;
+}
+
+.jpm-overview-card,
+.jpm-role-card,
+.jpm-info-card {
+  position: relative;
+  min-width: 0;
+  padding: 19px;
+  border: 1px solid #e4e4e6;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(36, 36, 42, 0.025);
+}
+
+.jpm-overview-card {
+  border: 1.5px solid #24242a;
+}
+
+.jpm-project-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  color: #24242a;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.jpm-chip,
+.jpm-tags span {
+  padding: 5px 8px;
+  border-radius: 100px;
+  background: #f0f0f1;
+  color: #4a4a4f;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.jpm-overview-card h1 {
+  margin: 18px 0 7px;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+}
+
+.jpm-lede {
+  max-width: 550px;
+  margin: 0;
+  color: #73727d;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.jpm-confidentiality {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+  padding: 11px 12px;
+  border-radius: 7px;
+  background: #f4f4f5;
+  color: #73727d;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.jpm-confidentiality > span {
+  color: #24242a;
+  font-size: 12px;
+}
+
+.jpm-confidentiality p {
+  margin: 0;
+}
+
+.jpm-role-card {
+  padding: 19px;
+}
+
+.jpm-card-eyebrow {
+  margin: 0 0 12px;
+  color: #24242a;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.jpm-card-arrow {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  color: #24242a;
+  font-size: 17px;
+}
+
+.jpm-role-card h2 {
+  margin: 17px 0 8px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.jpm-role-card > p:not(.jpm-card-eyebrow),
+.jpm-info-card > p:not(.jpm-card-eyebrow),
+.jpm-next-section > p:not(.jpm-card-eyebrow) {
+  margin: 0 0 11px;
+  color: #696873;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.jpm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e8e8ea;
+}
+
+.jpm-tags span {
+  background: #f4f4f5;
+  color: #73727d;
+}
+
+.jpm-info-card {
+  padding: 18px;
+  scroll-margin-top: 20px;
+}
+
+.jpm-info-card h2,
+.jpm-outcomes-section > h2,
+.jpm-next-section > h2 {
+  margin: 0 0 9px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.jpm-info-card ul {
+  display: grid;
+  gap: 7px;
+  margin: 11px 0;
+  padding-left: 16px;
+  color: #575660;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.jpm-opportunity-card {
+  background: #f0f0f1;
+}
+
+.jpm-opportunity-card .jpm-card-eyebrow,
+.jpm-opportunity-card h2 {
+  color: #24242a;
+}
+
+.jpm-opportunity-card ul {
+  color: #4a4a4f;
+}
+
+.jpm-design-note {
+  margin-top: 20px !important;
+  padding-top: 10px;
+  border-top: 1px solid rgba(36, 36, 42, 0.16);
+  color: #4a4a4f !important;
+  font-size: 9px !important;
+}
+
+.jpm-impact-chips {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.jpm-impact-chips span {
+  padding: 8px;
+  border-radius: 6px;
+  background: #f4f4f5;
+  color: #73727d;
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.jpm-lower-grid {
+  margin-top: 12px;
+}
+
+.jpm-focus-list {
+  margin-bottom: 14px !important;
+}
+
+.jpm-flow-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid #e8e8ea;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #5d5d63;
+  font-size: 8px;
+}
+
+.jpm-flow-card i {
+  width: 15px;
+  height: 1px;
+  flex: 0 0 15px;
+  background: #a7a7ac;
+}
+
+.jpm-team-label {
+  margin: 0 0 10px;
+  color: #888691;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.jpm-info-card h3 {
+  margin: 11px 0 4px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.jpm-outcomes-section,
+.jpm-next-section {
+  margin-top: 12px;
+  padding: 19px;
+  border: 1px solid #e4e4e6;
+  border-radius: 15px;
+  background: #fff;
+  scroll-margin-top: 20px;
+}
+
+.jpm-approach-section {
+  margin-top: 12px;
+  padding: 19px;
+  border: 1px solid #e4e4e6;
+  border-radius: 15px;
+  background: #fff;
+  scroll-margin-top: 20px;
+}
+
+.jpm-approach-section > h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.jpm-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.jpm-approach-grid article {
+  padding: 13px;
+  border: 1px solid #e8e8ea;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.jpm-approach-grid article > span {
+  color: #4a4a4f;
+  font-size: 9px;
+}
+
+.jpm-approach-grid h3 {
+  margin: 9px 0 7px;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.jpm-approach-grid p {
+  margin: 0;
+  color: #73727d;
+  font-size: 9px;
+  line-height: 1.65;
+}
+
+.jpm-approach-grid small {
+  display: block;
+  margin-top: 12px;
+  padding-top: 9px;
+  border-top: 1px solid #e8e8ea;
+  color: #4a4a4f;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.jpm-outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.jpm-outcomes-grid article {
+  padding: 12px;
+  border: 1px solid #e8e8ea;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.jpm-outcomes-grid strong {
+  color: #24242a;
+  font-size: 10px;
+}
+
+.jpm-outcomes-grid p {
+  margin: 6px 0 0;
+  color: #73727d;
+  font-size: 8px;
+  line-height: 1.55;
+}
+
+.jpm-outcome-footnote {
+  margin: 12px 0 0;
+  color: #73727d;
+  font-size: 9px;
+}
+
+.jpm-next-section {
+  background: #f0f0f1;
+}
+
+.jpm-next-section > h2 {
+  color: #24242a;
+}
+
+.jpmorgan-case-study .case-footer {
+  margin-top: 14px;
+}
+
+.jpmorgan-case-study .case-footer a {
+  color: #24242a;
+}
+
+.jpmorgan-case-study.embedded-case-study .jpm-layout {
+  width: min(900px, calc(100% - 48px));
+  padding-top: 20px;
+}
+
+.jpmorgan-case-study .case-header {
+  border-bottom-color: var(--case-line);
+  background: rgba(255, 254, 249, 0.94);
+}
+
+.jpmorgan-case-study .jpm-chip,
+.jpmorgan-case-study .jpm-tags span,
+.jpmorgan-case-study .jpm-opportunity-card,
+.jpmorgan-case-study .jpm-next-section {
+  background-color: var(--case-mint);
+}
+
+.jpmorgan-case-study .case-brand-mark {
+  background-color: var(--case-green);
+}
+
+.jpmorgan-case-study .jpm-overview-card h1,
+.jpmorgan-case-study .jpm-project-label,
+.jpmorgan-case-study .jpm-kicker,
+.jpmorgan-case-study .jpm-card-eyebrow,
+.jpmorgan-case-study .jpm-card-arrow,
+.jpmorgan-case-study .jpm-confidentiality > span,
+.jpmorgan-case-study .jpm-opportunity-card h2,
+.jpmorgan-case-study .jpm-opportunity-card .jpm-card-eyebrow,
+.jpmorgan-case-study .jpm-approach-grid article > span,
+.jpmorgan-case-study .jpm-outcomes-grid strong,
+.jpmorgan-case-study .case-footer a {
+  color: var(--case-green);
+}
+
+.jpmorgan-case-study .jpm-overview-card,
+.jpmorgan-case-study .jpm-role-card,
+.jpmorgan-case-study .jpm-info-card,
+.jpmorgan-case-study .jpm-outcomes-section,
+.jpmorgan-case-study .jpm-next-section,
+.jpmorgan-case-study .jpm-approach-section {
+  border-color: var(--case-line);
+  background-color: #fff;
+}
+
+.jpmorgan-case-study .jpm-overview-card {
+  border-color: #b7cde3;
+}
+
+.jpmorgan-case-study .jpm-chip,
+.jpmorgan-case-study .jpm-tags span,
+.jpmorgan-case-study .jpm-impact-chips span,
+.jpmorgan-case-study .jpm-confidentiality,
+.jpmorgan-case-study .jpm-approach-grid article,
+.jpmorgan-case-study .jpm-outcomes-grid article {
+  background-color: #fff;
+}
+
+.jpmorgan-case-study .jpm-flow-card,
+.jpmorgan-case-study .jpm-next-section {
+  background-color: #fff;
+}
+
+.jpmorgan-case-study .jpm-flow-card {
+  border-color: var(--case-line);
+}
+
+.jpmorgan-case-study .jpm-next-section {
+  background-color: var(--case-mint);
+}
+
+@media (max-width: 650px) {
+  .jpmorgan-case-study .jpm-layout,
+  .jpmorgan-case-study.embedded-case-study .jpm-layout {
+    width: calc(100% - 32px);
+    padding-top: 16px;
+  }
+
+  .jpm-hero,
+  .jpm-two-up {
+    grid-template-columns: 1fr;
+  }
+
+  .jpm-project-label {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .jpm-overview-card h1 {
+    font-size: 38px;
+  }
+
+  .jpm-outcomes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jpm-approach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .jpm-impact-chips {
+    grid-template-columns: 1fr;
+  }
+}
+
+.jpmorgan-case-study .jpm-layout,
+.jpmorgan-case-study.embedded-case-study .jpm-layout {
+  width: min(820px, calc(100% - 64px));
+  padding: 34px 0 56px;
+}
+
+.jpm-kicker {
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.jpm-hero,
+.jpm-two-up {
+  gap: 16px;
+}
+
+.jpm-hero {
+  grid-template-columns: minmax(0, 1.25fr) minmax(250px, 0.75fr);
+  margin-bottom: 16px;
+}
+
+.jpm-overview-card,
+.jpm-role-card,
+.jpm-info-card,
+.jpm-approach-section,
+.jpm-outcomes-section,
+.jpm-next-section {
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.jpm-project-label {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 11px;
+}
+
+.jpm-chip,
+.jpm-tags span {
+  font-size: 10px;
+}
+
+.jpm-overview-card h1 {
+  margin: 24px 0 12px;
+  font-size: clamp(42px, 5vw, 56px);
+}
+
+.jpm-lede {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.jpm-confidentiality {
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.jpm-confidentiality > span {
+  font-size: 15px;
+}
+
+.jpm-card-eyebrow {
+  margin-bottom: 14px;
+  font-size: 10px;
+}
+
+.jpm-card-arrow {
+  top: 21px;
+  right: 23px;
+}
+
+.jpm-role-card h2 {
+  margin: 22px 0 12px;
+  font-size: 24px;
+}
+
+.jpm-role-card > p:not(.jpm-card-eyebrow),
+.jpm-info-card > p:not(.jpm-card-eyebrow),
+.jpm-next-section > p:not(.jpm-card-eyebrow) {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.jpm-tags {
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.jpm-info-card h2,
+.jpm-outcomes-section > h2,
+.jpm-next-section > h2,
+.jpm-approach-section > h2 {
+  margin-bottom: 13px;
+  font-size: 26px;
+}
+
+.jpm-info-card ul {
+  gap: 9px;
+  margin: 14px 0;
+  padding-left: 21px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.jpm-design-note {
+  margin-top: 24px !important;
+  padding-top: 14px;
+  font-size: 12px !important;
+}
+
+.jpm-impact-chips {
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.jpm-impact-chips span {
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.jpm-lower-grid,
+.jpm-approach-section,
+.jpm-outcomes-section,
+.jpm-next-section {
+  margin-top: 16px;
+}
+
+.jpm-flow-card {
+  gap: 10px;
+  padding: 13px;
+  font-size: 11px;
+}
+
+.jpm-flow-card i {
+  width: 22px;
+  flex-basis: 22px;
+}
+
+.jpm-team-label {
+  margin-bottom: 12px;
+  font-size: 10px;
+}
+
+.jpm-info-card h3,
+.jpm-approach-grid h3 {
+  margin: 15px 0 6px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.jpm-approach-section {
+  scroll-margin-top: 28px;
+}
+
+.jpm-approach-grid {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.jpm-approach-grid article {
+  padding: 18px;
+}
+
+.jpm-approach-grid article > span {
+  font-size: 11px;
+}
+
+.jpm-approach-grid h3 {
+  margin-top: 8px;
+}
+
+.jpm-approach-grid p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.jpm-approach-grid small {
+  margin-top: 14px;
+  padding-top: 12px;
+  font-size: 11px;
+}
+
+.jpm-outcomes-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.jpm-outcomes-grid article {
+  padding: 16px;
+}
+
+.jpm-outcomes-grid strong {
+  font-size: 14px;
+}
+
+.jpm-outcomes-grid p {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.jpm-outcome-footnote {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.jpmorgan-case-study .case-footer {
+  margin-top: 18px;
+}
+
+@media (max-width: 650px) {
+  .jpmorgan-case-study .jpm-layout,
+  .jpmorgan-case-study.embedded-case-study .jpm-layout {
+    width: calc(100% - 36px);
+    padding: 28px 0 42px;
+  }
+
+  .jpm-kicker {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 9px;
+  }
+
+  .jpm-hero,
+  .jpm-two-up {
+    grid-template-columns: 1fr;
+  }
+
+  .jpm-overview-card,
+  .jpm-role-card,
+  .jpm-info-card,
+  .jpm-approach-section,
+  .jpm-outcomes-section,
+  .jpm-next-section {
+    padding: 20px;
+  }
+
+  .jpm-project-label {
+    gap: 8px;
+  }
+
+  .jpm-overview-card h1 {
+    font-size: clamp(38px, 10vw, 48px);
+  }
+
+  .jpm-lede {
+    font-size: 15px;
+  }
+
+  .jpm-role-card h2 {
+    font-size: 22px;
+  }
+}
+
+.jpmorgan-case-study {
+  background-color: #f0f6fc;
+  color: var(--case-ink);
+}
+
+.jpmorgan-case-study .case-header {
+  border-bottom-color: var(--case-line);
+  background: rgba(250, 253, 255, 0.94);
+}
+
+.jpmorgan-case-study :focus-visible {
+  outline-color: #789bc0;
+}
+
+.jpmorgan-case-study .jpm-overview-card,
+.jpmorgan-case-study .jpm-role-card,
+.jpmorgan-case-study .jpm-info-card,
+.jpmorgan-case-study .jpm-approach-section,
+.jpmorgan-case-study .jpm-outcomes-section,
+.jpmorgan-case-study .jpm-next-section {
+  border-color: var(--case-line);
+  background-color: #fff;
+}
+
+.jpmorgan-case-study .jpm-overview-card {
+  border-color: #b7cde3;
+}
+
+.jpmorgan-case-study .jpm-overview-card h1,
+.jpmorgan-case-study .jpm-project-label,
+.jpmorgan-case-study .jpm-card-eyebrow,
+.jpmorgan-case-study .jpm-card-arrow,
+.jpmorgan-case-study .jpm-confidentiality > span,
+.jpmorgan-case-study .jpm-info-card h2,
+.jpmorgan-case-study .jpm-info-card h3,
+.jpmorgan-case-study .jpm-approach-section > h2,
+.jpmorgan-case-study .jpm-approach-grid h3,
+.jpmorgan-case-study .jpm-outcomes-section > h2,
+.jpmorgan-case-study .jpm-next-section > h2,
+.jpmorgan-case-study .jpm-outcomes-grid strong {
+  color: #2e3948;
+}
+
+.jpmorgan-case-study .jpm-layout,
+.jpmorgan-case-study.embedded-case-study .jpm-layout {
+  width: min(820px, calc(100% - 64px));
+  padding: 34px 0 56px;
+}
+
+.jpmorgan-case-study .jpm-kicker {
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.jpmorgan-case-study .jpm-hero,
+.jpmorgan-case-study .jpm-two-up,
+.jpmorgan-case-study .jpm-approach-grid,
+.jpmorgan-case-study .jpm-outcomes-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.jpmorgan-case-study .jpm-hero {
+  margin-bottom: 14px;
+}
+
+.jpmorgan-case-study .jpm-lower-grid,
+.jpmorgan-case-study .jpm-approach-section,
+.jpmorgan-case-study .jpm-outcomes-section,
+.jpmorgan-case-study .jpm-next-section {
+  margin-top: 14px;
+}
+
+.jpmorgan-case-study .jpm-approach-grid,
+.jpmorgan-case-study .jpm-outcomes-grid {
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.jpmorgan-case-study .jpm-impact-chips {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 650px) {
+  .jpmorgan-case-study .jpm-layout,
+  .jpmorgan-case-study.embedded-case-study .jpm-layout {
+    width: calc(100% - 32px);
+    padding: 20px 0 42px;
+  }
+
+  .jpmorgan-case-study .jpm-hero,
+  .jpmorgan-case-study .jpm-two-up,
+  .jpmorgan-case-study .jpm-approach-grid,
+  .jpmorgan-case-study .jpm-outcomes-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .jpmorgan-case-study .jpm-impact-chips {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.jpmorgan-case-study .jpm-chip,
+.jpmorgan-case-study .jpm-tags span,
+.jpmorgan-case-study .jpm-impact-chips span,
+.jpmorgan-case-study .jpm-confidentiality,
+.jpmorgan-case-study .jpm-approach-grid article,
+.jpmorgan-case-study .jpm-outcomes-grid article,
+.jpmorgan-case-study .jpm-opportunity-card,
+.jpmorgan-case-study .jpm-next-section {
+  background-color: #fff;
+}
+
+.jpmorgan-case-study .jpm-flow-card {
+  border-color: var(--case-line);
+  background-color: #fff;
+  color: #52677e;
+}
+
+.jpmorgan-case-study .jpm-flow-card i {
+  background-color: #9ab2ce;
+}
+
+.jpmorgan-case-study .jpm-opportunity-card h2,
+.jpmorgan-case-study .jpm-opportunity-card .jpm-card-eyebrow,
+.jpmorgan-case-study .jpm-approach-grid article > span,
+.jpmorgan-case-study .jpm-outcomes-grid strong,
+.jpmorgan-case-study .case-footer a {
+  color: var(--case-green-dark);
+}
+
+.jpmorgan-case-study .jpm-lede,
+.jpmorgan-case-study .jpm-role-card > p:not(.jpm-card-eyebrow),
+.jpmorgan-case-study .jpm-info-card > p:not(.jpm-card-eyebrow),
+.jpmorgan-case-study .jpm-next-section > p:not(.jpm-card-eyebrow),
+.jpmorgan-case-study .jpm-approach-grid p,
+.jpmorgan-case-study .jpm-outcomes-grid p,
+.jpmorgan-case-study .jpm-outcome-footnote {
+  color: #5c6e83;
+}
+
+.jpmorgan-case-study .jpm-info-card ul,
+.jpmorgan-case-study .jpm-opportunity-card ul {
+  color: #4f6277;
+}
+
+.jpmorgan-case-study .jpm-tags,
+.jpmorgan-case-study .jpm-design-note,
+.jpmorgan-case-study .jpm-approach-grid small {
+  border-color: #d3e0ee;
+}
+
+.jpmorgan-case-study .jpm-design-note {
+  color: #45698f !important;
+}
+
+.jpmorgan-case-study .jpm-approach-grid article,
+.jpmorgan-case-study .jpm-outcomes-grid article {
+  border-color: #d7e4f1;
+}
+
+.jpmorgan-case-study .jpm-next-section > h2 {
+  color: #2e3948;
+
+  .jpm-info-card h2,
+  .jpm-outcomes-section > h2,
+  .jpm-next-section > h2,
+  .jpm-approach-section > h2 {
+    font-size: 23px;
+  }
+
+  .jpm-impact-chips {
+    grid-template-columns: 1fr;
+  }
+
+  .jpm-outcomes-grid {
+    grid-template-columns: 1fr;
+  }
+}
